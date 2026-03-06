@@ -112,6 +112,29 @@ const TEAM = [
   }
 ];
 
+const Logo = ({ className = "h-16 w-auto" }: { className?: string }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 2134 2134" 
+    className={className}
+    style={{ fillRule: 'evenodd', clipRule: 'evenodd', strokeLinejoin: 'round', strokeMiterlimit: 2 }}
+  >
+    <rect id="Logo-Sorriso-Mágico" x="0" y="0" width="2133.333" height="2133.333" style={{ fill: 'none' }} />
+    <g>
+      <g>
+        <path d="M1138.066,1175.791l2.425,11.956c-473.93,103.358 -650.431,-92.032 -669.979,-63.952c-6.539,9.394 178.215,237.472 470.825,251.295c260.66,12.314 379.167,-94.525 385.646,-98.567c1.661,-1.036 29.3,0.626 -0.726,24.462c-495.363,393.242 -1018.137,25.57 -1080.938,-367.115c-7.888,-49.32 48.838,24.643 212.377,82.923c853.814,304.276 1320.362,-463.259 1204.88,-625.862c-51.962,-73.164 -239.152,-62.167 -112.177,-81.509c177.416,-27.026 145.04,-186.81 154.671,-196.315c28.844,-28.466 0.195,120.589 97.297,173.175c42.637,23.091 162.965,35.687 104.225,44.954c-156.499,24.69 -157.378,53.519 -197.219,235.705c-12.083,55.251 -88.562,404.974 -428.707,562.147c-82.944,38.326 -44.665,-81.899 -76.769,-66.446c-18.924,9.109 30.194,66.772 -75.754,93.721c-20.562,5.23 8.341,18.689 9.923,19.426Z" style={{ fill: '#74bbe6' }} />
+        <path d="M521.458,1417.174c3.754,-1.411 4.753,-7.096 8.507,-8.507c3.669,-1.379 23.069,10.801 24.944,11.978c46.86,29.418 341.256,214.236 691.525,-11.219c246.766,-158.834 295.783,-362.582 316.757,-429.356c17.971,-57.213 119.72,-133.977 165.404,-323.463c14.521,-60.229 20.713,57.311 20.991,62.585c25.96,492.757 -301.985,740.102 -513.572,821.292c-296.79,113.885 -598.549,-15.59 -714.555,-123.31Z" style={{ fill: '#a5cf6d' }} />
+        <path d="M1476.238,478.731c52.596,94.637 96.765,39.335 112.302,69.758c11.291,22.109 -104.133,-2.881 -118.485,99.485c-13.508,96.344 -25.025,-14.886 -40.753,-42.407c-30.104,-52.677 -128.999,-38.999 -100.91,-61.68c20.653,-16.676 98.592,25.81 117.925,-100.962c11.034,-72.35 26.95,25.331 29.921,35.807Z" style={{ fill: '#a5cd6a' }} />
+        <path d="M1976.032,662.911c-79.123,21.36 -77.184,31.898 -89.05,82.29c-13.681,58.098 -17.881,-21.875 -36.882,-49.883c-19.833,-29.234 -83.545,-24.953 -72.944,-43.406c11.502,-20.02 67.478,27.449 88.799,-74.904c14.927,-71.657 15.928,24.78 43.998,50.493c27.739,25.41 66.799,12.686 66.079,35.41Z" style={{ fill: '#a4cc6b' }} />
+        <path d="M383.151,835.024c-2.058,2.494 -4.116,4.989 -6.175,7.483c-237.242,31.18 -170.228,224.421 -212.494,206.659c-12.433,-5.225 -33.253,-233.965 177.246,-227.093c44.003,1.437 40.266,10.923 41.423,12.95Z" style={{ fill: '#79bae3' }} />
+        <path d="M1138.066,1175.791l9.229,-6.805c30.109,-1.387 33.364,-0.64 36.185,0.008c64.319,14.76 77.641,-22.369 118.553,-5.248c31.667,13.252 -3.866,14.337 -36.12,24.733c-41.536,13.388 -47.003,82.008 -49.004,84.034c-35.584,36.036 14.666,-84.766 -76.418,-84.767l-2.425,-11.956Z" style={{ fill: '#afd5e9' }} />
+        <path d="M1112.415,1266.017c17.81,-19.932 44.402,3.3 25.055,25.165l-6.836,3.875c-0.58,-0.019 -4.553,8.615 -17.133,-5.037c-12.447,-13.509 -4.354,-16.107 -4.363,-16.717l3.277,-7.287Z" style={{ fill: '#73b2d7' }} />
+      </g>
+      <text x="39.215px" y="1915.71px" style={{ fontFamily: 'Poppins-MediumItalic, Poppins', fontWeight: 500, fontStyle: 'italic', fontSize: '273.962px', fill: '#74bbe6' }}>Sorriso Mágico</text>
+    </g>
+  </svg>
+);
+
 // --- Components ---
 
 const Navbar = () => {
@@ -122,12 +145,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex items-center gap-3">
-            <img 
-              src="/Logo Sorriso Mágico.png" 
-              alt="Sorriso Mágico Logo" 
-              className="h-16 w-auto object-contain"
-              referrerPolicy="no-referrer"
-            />
+            <Logo className="h-16 w-auto" />
           </div>
 
           {/* Desktop Menu */}
@@ -160,19 +178,48 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-gray-100 overflow-hidden"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden bg-white border-b border-gray-100 overflow-hidden shadow-xl"
           >
-            <div className="px-4 pt-2 pb-6 space-y-4">
-              <a href="#sobre" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-gray-600">Sobre</a>
-              <a href="#servicos" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-gray-600">Serviços</a>
-              <a href="#equipa" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-gray-600">Equipa</a>
-              <a href="#contactos" onClick={() => setIsOpen(false)} className="block text-lg font-medium text-gray-600">Contactos</a>
+            <div className="px-6 pt-2 pb-8 space-y-2">
               <a 
-                href="tel:910000000" 
-                className="block w-full text-center bg-clinic-blue text-white py-3 rounded-xl font-bold"
+                href="#sobre" 
+                onClick={() => setIsOpen(false)} 
+                className="block py-3 text-lg font-semibold text-gray-700 hover:text-clinic-blue transition-colors border-b border-gray-50"
               >
-                Marcar Consulta
+                Sobre
               </a>
+              <a 
+                href="#servicos" 
+                onClick={() => setIsOpen(false)} 
+                className="block py-3 text-lg font-semibold text-gray-700 hover:text-clinic-blue transition-colors border-b border-gray-50"
+              >
+                Serviços
+              </a>
+              <a 
+                href="#equipa" 
+                onClick={() => setIsOpen(false)} 
+                className="block py-3 text-lg font-semibold text-gray-700 hover:text-clinic-blue transition-colors border-b border-gray-50"
+              >
+                Equipa
+              </a>
+              <a 
+                href="#contactos" 
+                onClick={() => setIsOpen(false)} 
+                className="block py-3 text-lg font-semibold text-gray-700 hover:text-clinic-blue transition-colors border-b border-gray-50"
+              >
+                Contactos
+              </a>
+              <div className="pt-4">
+                <a 
+                  href="tel:910000000" 
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2 w-full bg-clinic-blue text-white py-4 rounded-2xl font-bold shadow-lg shadow-clinic-blue/20"
+                >
+                  <Calendar className="w-5 h-5" />
+                  Marcar Consulta
+                </a>
+              </div>
             </div>
           </motion.div>
         )}
@@ -264,7 +311,7 @@ const Hero = () => (
 );
 
 const About = () => (
-  <section id="sobre" className="py-24 bg-white">
+  <section id="sobre" className="py-24 bg-white scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         <div className="order-2 lg:order-1">
@@ -306,7 +353,7 @@ const About = () => (
 );
 
 const Services = () => (
-  <section id="servicos" className="py-24 bg-gray-50">
+  <section id="servicos" className="py-24 bg-gray-50 scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Os Nossos Serviços</h2>
@@ -410,7 +457,7 @@ const Testimonials = () => (
 );
 
 const Team = () => (
-  <section id="equipa" className="py-24 bg-gray-50">
+  <section id="equipa" className="py-24 bg-gray-50 scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Equipa Médica</h2>
@@ -471,7 +518,7 @@ const CTA = () => (
 );
 
 const Contacts = () => (
-  <section id="contactos" className="py-24 bg-white">
+  <section id="contactos" className="py-24 bg-white scroll-mt-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid lg:grid-cols-2 gap-16">
         <div>
@@ -537,12 +584,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-2">
-          <img 
-            src="/Logo Sorriso Mágico.png" 
-            alt="Sorriso Mágico Logo" 
-            className="h-12 w-auto brightness-0 invert" 
-            referrerPolicy="no-referrer"
-          />
+          <Logo className="h-12 w-auto brightness-0 invert" />
         </div>
         <div className="flex gap-8 text-gray-400">
           <a href="#" className="hover:text-white transition-colors">Privacidade</a>
