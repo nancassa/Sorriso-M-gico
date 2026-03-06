@@ -1,0 +1,5 @@
+{
+  "name": "Sorriso Mágico - Clínica Dentária",
+  "description": "Landing page moderna e profissional para a clínica dentária Sorriso Mágico em Lisboa.",
+  "requestFramePermissions": ["geolocation"]
+}

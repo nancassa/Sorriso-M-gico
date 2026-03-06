@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-clinic-blue: #7ec0ee;
+  --color-clinic-green: #a3d16c;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
