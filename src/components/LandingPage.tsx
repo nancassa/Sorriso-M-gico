@@ -122,22 +122,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <div className="flex items-center gap-3">
-            <div className="relative">
-              <div className="w-12 h-12 bg-clinic-blue/10 rounded-full flex items-center justify-center">
-                <Smile className="text-clinic-blue w-8 h-8" />
-              </div>
-              <div className="absolute -top-1 -right-1">
-                <Star className="text-clinic-green w-4 h-4 fill-clinic-green" />
-              </div>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-800 leading-none">
-                Sorriso <span className="text-clinic-green">Mágico</span>
-              </span>
-              <span className="text-[10px] text-clinic-blue font-bold uppercase tracking-widest mt-1">
-                Clínica Dentária
-              </span>
-            </div>
+            <img 
+              src="/Logo Sorriso Mágico.png" 
+              alt="Sorriso Mágico Logo" 
+              className="h-16 w-auto object-contain"
+              referrerPolicy="no-referrer"
+            />
           </div>
 
           {/* Desktop Menu */}
@@ -547,8 +537,12 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-2">
-          <Smile className="text-clinic-blue w-8 h-8" />
-          <span className="text-2xl font-bold">Sorriso <span className="text-clinic-green">Mágico</span></span>
+          <img 
+            src="/Logo Sorriso Mágico.png" 
+            alt="Sorriso Mágico Logo" 
+            className="h-12 w-auto brightness-0 invert" 
+            referrerPolicy="no-referrer"
+          />
         </div>
         <div className="flex gap-8 text-gray-400">
           <a href="#" className="hover:text-white transition-colors">Privacidade</a>
